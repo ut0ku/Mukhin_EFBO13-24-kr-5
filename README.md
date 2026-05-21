@@ -218,14 +218,19 @@ get_storage возвращает объект / словарь, который �
 Локальный запуск:
 
 python -m venv .venv
+
 .\.venv\Scripts\activate
+
 pip install -r requirements.txt
+
 python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 
 Запуск тестов:
 
 .\.venv\Scripts\activate
+
 python -m pytest -q
 
 Docker Compose
+
 docker compose up --build
