@@ -212,3 +212,20 @@ get_storage возвращает объект / словарь, который �
 7. В Swagger UI маршруты сгруппированы по тегам: tasks, users, admin
 
 <img width="753" height="389" alt="image" src="https://github.com/user-attachments/assets/2aec01d9-1f6c-4983-8a73-e3bef9cfb3bc" />
+
+Запуск проекта & тесты
+
+Локальный запуск:
+
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+
+Запуск тестов:
+
+.\.venv\Scripts\activate
+python -m pytest -q
+
+Docker Compose
+docker compose up --build
