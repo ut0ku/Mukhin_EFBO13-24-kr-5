@@ -231,6 +231,6 @@ python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 
 python -m pytest -q
 
-Docker Compose
+Docker Compose:
 
 docker compose up --build
